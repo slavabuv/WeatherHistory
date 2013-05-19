@@ -74,6 +74,11 @@
 
 @implementation WHForecastTemp
 
+- (NSString *)icon
+{
+	return [_dictionary objectForKey:@"icon"];
+}
+
 - (NSString *)time
 {
 	return [NSString stringWithFormat:@"%@ %@", [self hour], [self min]];

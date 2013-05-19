@@ -29,6 +29,7 @@
 
 @interface WHForecastTemp : WHBaseDataObject
 
+- (NSString *)icon;
 - (NSString *)time;
 - (NSString *)min;
 - (NSString *)hour;
@@ -46,6 +47,7 @@
 - (NSDictionary *)dailysummary;
 - (NSArray *)observations;
 - (NSString *)icon;
+
 @end
 
 @interface WHProverbsDataObject : WHBaseDataObject

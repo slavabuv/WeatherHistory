@@ -284,7 +284,10 @@
 					cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 					[cell.contentView addSubview:_scrollViewDays];
 					[cell.textLabel setTextAlignment:NSTextAlignmentCenter];
+					[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+					[cell.imageView setImage:[UIImage imageNamed:@"AL_arrow.png"]];
 				}
+				
 				if (_forecast)
 				{
 					[cell.textLabel setText:[_forecast dateAsSring]];
@@ -306,9 +309,11 @@
 					[cell.detailTextLabel setNumberOfLines:0];
 				}
 				WHForecastTemp  *forecastTemp = [[_forecast observations] objectAtIndex:indexPath.row];
-				[cell.imageView setImage:[CacheManager image:[NSString stringWithFormat:@"@%",[forecastTemp ]] success:<#^(UIImage *img)success#> failure:<#^(NSError *error)failure#>]];
-				//http://icons.wxug.com/i/c/a/partlycloudy.gif
-
+				[cell.imageView setImage:[CacheManager image:[NSString stringWithFormat:@"http://icons.wxug.com/i/c/a/%@.gif",[forecastTemp icon]] success:^(UIImage *img) {
+					[cell.imageView setImage:img];
+				} failure:^(NSError *error) {
+					//
+				}]];
 				[cell.textLabel setText:[forecastTemp temp]];
 				[cell.detailTextLabel setText:[forecastTemp time]];
 				//[cell.contentView setBackgroundColor:[WHDataModel colorOfTemp:[[forecastTemp temp] floatValue]]];
@@ -377,11 +382,13 @@
      */
 }
 
-// Override to support conditional editing of the table view.
-// This only needs to be implemented if you are going to be returning NO
-// for some items. By default, all items are editable.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return YES if you want the specified item to be editable.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath 
+{
+	if (indexPath.section == 0 && indexPath.row == 0)
+	{
+		return NO;
+	}
+	
     return YES;
 }
 

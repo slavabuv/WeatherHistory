@@ -41,12 +41,12 @@
 		F9932A511748117300FDEBCE /* AL_header_schet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9932A4F1748117300FDEBCE /* AL_header_schet@2x.png */; };
 		F9932A6417485E5800FDEBCE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9932A6317485E5800FDEBCE /* QuartzCore.framework */; };
 		F9932A7F1748616200FDEBCE /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9932A7C1748608D00FDEBCE /* libCorePlot-CocoaTouch.a */; };
-		F9932A85174861EA00FDEBCE /* PlotGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = F9932A82174861EA00FDEBCE /* PlotGallery.m */; };
-		F9932A86174861EA00FDEBCE /* PlotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F9932A84174861EA00FDEBCE /* PlotItem.m */; };
 		F9932A891748669000FDEBCE /* ControlChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F9932A881748669000FDEBCE /* ControlChart.m */; };
 		F9932A8C17486A5600FDEBCE /* VerticalBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F9932A8B17486A5600FDEBCE /* VerticalBarChart.m */; };
 		F9932A8F17489D5100FDEBCE /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9932A8E17489D5000FDEBCE /* CacheManager.m */; };
-		F9932A9217489E3A00FDEBCE /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F9932A9117489E3A00FDEBCE /* NSString+MD5.m */; };
+		F9932AB01748AAEA00FDEBCE /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F9932AA81748AAEA00FDEBCE /* NSString+MD5.m */; };
+		F9932AB11748AAEA00FDEBCE /* PlotGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = F9932AAA1748AAEA00FDEBCE /* PlotGallery.m */; };
+		F9932AB21748AAEA00FDEBCE /* PlotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F9932AAC1748AAEA00FDEBCE /* PlotItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,18 +120,22 @@
 		F9932A4F1748117300FDEBCE /* AL_header_schet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AL_header_schet@2x.png"; sourceTree = "<group>"; };
 		F9932A6317485E5800FDEBCE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F9932A751748608C00FDEBCE /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
-		F9932A81174861EA00FDEBCE /* PlotGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotGallery.h; sourceTree = "<group>"; };
-		F9932A82174861EA00FDEBCE /* PlotGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotGallery.m; sourceTree = "<group>"; };
-		F9932A83174861EA00FDEBCE /* PlotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotItem.h; sourceTree = "<group>"; };
-		F9932A84174861EA00FDEBCE /* PlotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotItem.m; sourceTree = "<group>"; };
 		F9932A871748669000FDEBCE /* ControlChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControlChart.h; path = shared/ControlChart.h; sourceTree = SOURCE_ROOT; };
 		F9932A881748669000FDEBCE /* ControlChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControlChart.m; path = shared/ControlChart.m; sourceTree = SOURCE_ROOT; };
 		F9932A8A17486A5600FDEBCE /* VerticalBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VerticalBarChart.h; path = shared/VerticalBarChart.h; sourceTree = SOURCE_ROOT; };
 		F9932A8B17486A5600FDEBCE /* VerticalBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerticalBarChart.m; path = shared/VerticalBarChart.m; sourceTree = SOURCE_ROOT; };
 		F9932A8D17489D5000FDEBCE /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
 		F9932A8E17489D5000FDEBCE /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
-		F9932A9017489E3A00FDEBCE /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
-		F9932A9117489E3A00FDEBCE /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		F9932AA51748AAEA00FDEBCE /* ControlChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlChart.h; sourceTree = "<group>"; };
+		F9932AA61748AAEA00FDEBCE /* ControlChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlChart.m; sourceTree = "<group>"; };
+		F9932AA71748AAEA00FDEBCE /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		F9932AA81748AAEA00FDEBCE /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		F9932AA91748AAEA00FDEBCE /* PlotGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotGallery.h; sourceTree = "<group>"; };
+		F9932AAA1748AAEA00FDEBCE /* PlotGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotGallery.m; sourceTree = "<group>"; };
+		F9932AAB1748AAEA00FDEBCE /* PlotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotItem.h; sourceTree = "<group>"; };
+		F9932AAC1748AAEA00FDEBCE /* PlotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotItem.m; sourceTree = "<group>"; };
+		F9932AAD1748AAEA00FDEBCE /* VerticalBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalBarChart.h; sourceTree = "<group>"; };
+		F9932AAE1748AAEA00FDEBCE /* VerticalBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalBarChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,12 +316,16 @@
 		F9932A80174861EA00FDEBCE /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				F9932A9017489E3A00FDEBCE /* NSString+MD5.h */,
-				F9932A9117489E3A00FDEBCE /* NSString+MD5.m */,
-				F9932A81174861EA00FDEBCE /* PlotGallery.h */,
-				F9932A82174861EA00FDEBCE /* PlotGallery.m */,
-				F9932A83174861EA00FDEBCE /* PlotItem.h */,
-				F9932A84174861EA00FDEBCE /* PlotItem.m */,
+				F9932AA51748AAEA00FDEBCE /* ControlChart.h */,
+				F9932AA61748AAEA00FDEBCE /* ControlChart.m */,
+				F9932AA71748AAEA00FDEBCE /* NSString+MD5.h */,
+				F9932AA81748AAEA00FDEBCE /* NSString+MD5.m */,
+				F9932AA91748AAEA00FDEBCE /* PlotGallery.h */,
+				F9932AAA1748AAEA00FDEBCE /* PlotGallery.m */,
+				F9932AAB1748AAEA00FDEBCE /* PlotItem.h */,
+				F9932AAC1748AAEA00FDEBCE /* PlotItem.m */,
+				F9932AAD1748AAEA00FDEBCE /* VerticalBarChart.h */,
+				F9932AAE1748AAEA00FDEBCE /* VerticalBarChart.m */,
 			);
 			path = shared;
 			sourceTree = "<group>";
@@ -467,12 +475,12 @@
 				F98ACC6117477C1A0005FCDA /* WHForecastModelController.m in Sources */,
 				F98ACC6417477CBD0005FCDA /* WHBaseStorageModelController.m in Sources */,
 				F98ACC6A1747843D0005FCDA /* WHDataModel.m in Sources */,
-				F9932A85174861EA00FDEBCE /* PlotGallery.m in Sources */,
-				F9932A86174861EA00FDEBCE /* PlotItem.m in Sources */,
 				F9932A891748669000FDEBCE /* ControlChart.m in Sources */,
 				F9932A8C17486A5600FDEBCE /* VerticalBarChart.m in Sources */,
 				F9932A8F17489D5100FDEBCE /* CacheManager.m in Sources */,
-				F9932A9217489E3A00FDEBCE /* NSString+MD5.m in Sources */,
+				F9932AB01748AAEA00FDEBCE /* NSString+MD5.m in Sources */,
+				F9932AB11748AAEA00FDEBCE /* PlotGallery.m in Sources */,
+				F9932AB21748AAEA00FDEBCE /* PlotItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
